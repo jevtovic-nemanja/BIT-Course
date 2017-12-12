@@ -1,0 +1,414 @@
+$font-stack: 'Times New Roman', Times, serif;
+$primary-color: powderblue;
+
+body {
+    font: 100% $font-stack;
+    width: 100%;
+}
+
+@import "color-and-transform";
+
+@import "mixins";
+
+main {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.logo {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.logo1 {
+    border: 2px solid;
+    border-color: grey;
+    border-right: 0;
+}
+
+.cover {
+    background-image: url("../banner3.jpg");
+    background-size: cover;
+    width: 100%;
+    min-height: 325px;
+    display: table;
+}
+
+.covertext {
+    text-align: center;
+    vertical-align: middle;
+    height: 80%;
+    display: table-cell;
+}
+
+button {
+    background-color: blue;
+    border-radius: 20px;
+    width: 33%;
+    max-width: 130px;
+    border: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: unset;
+    color: white;
+}
+
+nav {
+    ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 5px 0;
+    background-color: $primary-color;
+    }
+
+    li {
+    padding: 2px 0;
+    }
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+section li {
+   padding: 5px 0;
+}
+
+.about {
+    width: 100%;
+    display: block;
+}
+
+section {
+    margin-top: 100px;
+}
+
+article {
+    background-color: $primary-color;
+    color: white;
+    text-align: justify;
+    @include box-shadow(7px 7px 5px 0px rgba(50, 50, 50, 0.75));
+}
+
+article > h4 {
+    color: black;
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+    left: 5%;
+    margin-top: 12%;
+    
+}
+
+article > img {
+    border: 5px;
+    border-color: white;
+    border-style: ridge;
+    border-radius: 100%;
+    width: 20%;
+    margin-top: 5%;
+    margin-left: 3%;
+    float: left;
+}
+
+article > p {
+    padding: 0 10px 20px 10px;
+    clear: both;
+    height: 90%;
+}
+
+.contact {
+    padding: 10px;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#contact1 {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contact2 {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact i {
+    margin-right: 10px;
+}
+
+.contact-image {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-image img {
+    width: 100%;
+}
+
+.contact-image iframe {
+    width: 100%;
+    border: 0;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 0;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 0;
+}
+
+form {
+    width: 90%;
+    margin: 10px auto;
+}
+
+#submit {
+    background-color:goldenrod;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10%;
+    border: 0;
+    width: 30%;
+    margin-bottom: 30px;
+    max-width: 134px;
+}
+
+footer {
+    background-color: black;
+    color: lightgrey;
+    text-align: center;
+}
+
+footer p {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.underline {
+    width: 40%;
+    width: 150px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+@media screen and (min-width: 768px) {
+
+    .cover {
+        min-height: 560px;
+    }
+
+    .covertext {
+        font-size: 140%;
+    }
+
+    button {
+        max-width: 180px;
+    }
+
+    body {
+        position: relative;
+    }
+
+    nav {
+        position: absolute;
+        top: 0;
+        width: 100%;
+    
+        ul {
+        background-color: transparent;
+        padding: 0;
+        }
+
+        li {
+        display: inline-block;
+        padding-right: 10px;
+        }
+    }
+
+    .nav-list {
+        float: right;
+        margin-right: 15px;
+        padding-top: 10px;
+        text-transform: uppercase;
+    }
+
+    .logo {
+        float: left;
+        margin-left: 10px;
+    }
+    
+    .logo1 {
+        padding-left: 7px;
+        border-color: white;
+    }
+
+    .logo2 {
+        color: white;
+    }
+
+    .about {
+        width: 45%;
+    }
+
+    #about {
+        width: 50%;
+        float: left;
+        margin-right: 10px;
+    }
+
+    article {
+        float: left;
+        width: 45%;
+        min-height: 300px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        margin-bottom: 2%;
+        box-sizing: border-box;
+    }
+
+    .contact {
+        width: 50%;
+        float: left;
+        min-height: 162.05px;
+    }
+
+    .contact-image {
+        width: 50%;
+        display: inline-block;
+    }
+
+    .contact-image img {
+        max-height: 162.05px;
+    }
+
+    #iframe {
+        width: 100%;
+    }
+
+    #mailUs {
+        clear: both;
+    }
+
+    #contact1 {
+        float: left;
+    }
+
+    #contactUs {
+        display: inline-block;
+    }
+
+    #connectUs {
+        display: inline-block;
+    }
+
+    .input {
+        display: inline-block;
+        width: 32.5%;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    #footer-last {
+        display: block;
+        padding-bottom: 20px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .cover {
+        min-height: 992px;
+    }
+
+    .covertext {
+        font-size: 200%;
+    }
+
+    button {
+        max-width: 300px;
+    }
+    
+    #div-table {
+            display: table;
+    }
+
+    #div-cell {
+        display: table-cell;
+    }
+
+    .about {
+        position: initial;
+        width: 30%;
+        display: inline-block;
+        margin-right: 3%;
+        margin-left: 3%;
+        height: 381px;
+    }
+
+    #about {
+        width: 30%;
+        margin-left: 2%;
+        line-height: 200%;
+        margin-right: 0;
+    }
+
+    #services {
+        width: 30%;
+        clear: none;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 1%;
+        line-height: 200%;
+    }
+
+    article {
+        width: 30%;
+        margin-left: 1.6%;
+        margin-right: 1.6%;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 0;
+    }
+
+    #contact1 {
+        width: 50%;
+    }
+
+    #contact2 {
+        width: 50%;
+        display: inline-block;
+    }
+
+    .contact-image img {
+        min-height: 162.05px;
+    }
+
+    #contactUs {
+        display: block;
+        clear: both;
+        padding-top: 50px;
+    }
+}

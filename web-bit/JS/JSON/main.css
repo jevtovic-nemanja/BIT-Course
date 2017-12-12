@@ -1,0 +1,19 @@
+table {
+    margin-right: 60px;
+    margin-bottom: 20px;
+    float: left;
+    text-align: center;
+    border: 1px solid black;
+}
+
+td, th {
+    border-bottom: 1px solid black;
+}
+
+div {
+    position: relative;
+}
+
+span {
+    color: red;
+}

@@ -1,0 +1,17 @@
+.about {
+    
+    @include underline;
+
+    @include paddings;
+
+    hr {
+        color: white;
+        background: white;
+    }
+
+    button {
+        border-radius: 5%;
+        border: 1px solid white;
+        padding: 5px;
+    }
+}

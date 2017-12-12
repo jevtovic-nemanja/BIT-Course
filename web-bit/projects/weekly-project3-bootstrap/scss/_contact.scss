@@ -1,0 +1,24 @@
+.contact {
+    
+    @include underline;
+
+    @include paddings;
+
+    form {
+        color: grey;
+
+        input, textarea {
+        border: 0;
+        border-bottom: 1px solid;
+        border-color: rgba(128, 128, 128, 0.2);
+        border-radius: 0;
+        }
+    }
+
+    button {
+        border-radius: 10%;
+        border: 1px solid white;
+        padding: 10px;
+    }
+
+}

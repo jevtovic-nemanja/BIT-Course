@@ -1,0 +1,97 @@
+body {
+    width: 960px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0 auto;
+}
+
+h1 {
+    color: red;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+form {
+    background-color: rgb(241, 231, 231);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 350px;
+    margin: 0 auto;
+}
+
+h3 {
+    color: black;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 0;
+    margin-bottom: 2px;
+    font-size: 32px;
+}
+
+h3 > span {
+    color: goldenrod;
+}
+
+#submit {
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 6px;
+    width: 100px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    text-indent: 0;
+}
+
+#name {
+    display: block;
+    background-image: url("name.png");
+}
+
+#email {
+    display: block;
+    background-image: url("email.png");
+}
+
+#phone {
+    display: block;
+    background-image: url("phone.png");
+}
+
+#address {
+    display: block;
+    margin-bottom: 30px;
+    background-image: url("address.png");
+}
+
+input {
+    margin: 2px auto 10px auto;
+    border-radius: 5px;
+    width: 75%;
+    text-indent: 25px;
+    background-position: 1px 1px;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+}
+
+label {
+    margin-left: 45px;
+}
+
+#name:hover {
+    cursor: pointer;
+}
+
+#email:hover {
+    cursor: wait;
+}
+
+#phone:hover {
+    cursor: progress;
+}
+
+#address:hover {
+    cursor: url("cursor.png");
+}

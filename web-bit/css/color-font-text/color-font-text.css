@@ -1,0 +1,182 @@
+@font-face {
+    font-family: "Orange Juice";
+    src: url("fonts/orange juice 2.0.ttf");
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+table {
+    height: 200px;
+    width: 600px;
+}
+
+h1 {
+    font-family: "Nosifer";
+}
+
+h2 {
+    font-family: "Indie Flower";
+}
+
+h3 {
+    font-family: "Orange Juice";
+}
+
+h4 {
+    text-indent: 50px;
+}
+
+h5 {
+    text-transform: capitalize;
+}
+
+h6 {
+    text-transform: uppercase;
+}
+
+.pOne {
+    color: green;
+    text-decoration: line-through;
+    text-align: left;
+}
+
+.pTwo {
+    color: rgba(211, 15, 132, 0.5);
+    font-size: 48px;
+    text-align: right;
+}
+
+.pThree {
+    color: #20406d;
+    font-size: 200%;
+    text-align: center;
+}
+
+.pFour {
+    background-color: orange;
+    text-decoration: underline;
+    text-align: justify;
+}
+
+.pFive {
+    background-color: rgb(88, 171, 44);
+    text-decoration: overline;
+}
+
+.pSix {
+    background-color: #a501c3;
+}
+
+#sOne {
+    letter-spacing: 10px;
+}
+
+#sTwo {
+    line-height: 200%;
+}
+
+#sThree {
+    text-shadow: 10px 13px 2px rgba(154, 85, 108, 0.92);
+}
+
+#one {
+    vertical-align: top;
+}
+
+#two {
+    vertical-align: bottom;
+}
+
+#three {
+    vertical-align: middle;
+}
+
+#four {
+    vertical-align: sub;
+}
+
+#five {
+    vertical-align: super;
+}
+
+#six {
+    font-size: 300%;
+    vertical-align: text-bottom;
+}
+
+#seven {
+    font-size: 300%;
+    vertical-align: text-top;
+}
+
+#eight {
+    vertical-align: baseline;
+}
+
+p.pOne > img {
+    opacity: 0.5;
+}
+
+p.four img {
+    opacity: 0.2;
+}
+
+.pFour::after {
+    content: "Djoka";
+    color: red;
+}
+
+.pFive::before {
+    content: "Pera";
+    color: greenyellow;
+}
+
+.pOne::first-letter {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.pTwo::first-line {
+    font-weight: 900;
+    font-style: oblique;
+    text-indent: 20px;
+}
+
+::selection {
+    background: red;
+    color: green;
+}
+
+tr:first-child {
+    text-transform: lowercase;
+}
+
+input:focus {
+    color: red;
+}
+
+input:required {
+    background-color: green;
+}
+
+input:disabled {
+    background-color: yellow;
+}
+
+a:link {
+    color: gold;
+}
+
+a:active {
+    color: purple;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: turquoise;
+}

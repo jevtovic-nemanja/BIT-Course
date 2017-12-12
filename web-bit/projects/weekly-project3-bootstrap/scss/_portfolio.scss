@@ -1,0 +1,28 @@
+.portfolio {
+    
+    @include paddings;
+    
+    @include underline;
+      
+    hr {
+        color: black;
+        background: black;
+    }
+
+    img {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        @media screen and (min-width: 768px) {
+            float: left;
+            width: 45%;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+        }
+        @media screen and (min-width: 992px) {
+            float: left;
+            width: 28%;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.post {
+    width: 800px;
+    height: 300px;
+    margin: 50px auto;
+    background-color: whitesmoke;
+    color: black;
+    border: 1px solid darkgrey;
+    text-align: justify;
+    padding: 50px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.idNumber {
+    font-weight: bold;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding-right: 20px;
+}

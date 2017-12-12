@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Super Mario</title>
+</head>
+
+<body>
+    <div id="mario_div">
+        <img src="images/mario.png" id="mario">
+        <img src="images/mario_running.gif" id="mario_running" class="hidden">
+    </div>
+    <script>
+        const mario = document.getElementById("mario");
+        const runningMario = document.getElementById("mario_running");
+        const body = document.getElementsByTagName("body")[0];
+        
+        let timer;
+        let x = 100;
+        
+        window.addEventListener("keydown", event => {
+            if (event.keyCode === 32) {
+                run();
+            }
+        });
+        
+        window.addEventListener("keyup", stop);
+
+        function offset() {
+            x += 100
+            body.style.backgroundPositionX = -x + "px";
+        }
+
+        function run() {
+            mario.classList.add("hidden");
+            runningMario.classList.remove("hidden");
+            if (!timer) {
+            timer = setInterval(offset, 100);
+            }
+        }
+
+        function stop() {
+            runningMario.classList.add("hidden");
+            mario.classList.remove("hidden");
+            clearInterval(timer);
+            timer = null;
+        }
+    </script>
+</body>
+
+</html>

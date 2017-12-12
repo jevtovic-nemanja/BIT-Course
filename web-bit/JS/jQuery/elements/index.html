@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+
+    <script>
+        var images = [
+            'https://betanews.com/wp-content/uploads/2015/05/musepadrazer-e1432313670615.jpg',
+            'https://rlv.zcache.com/colorful_music_equalizer_w_reflection_cool_techno_mouse_pad-r3d3df2bda63b4e3ea37238d70530970c_x74vi_8byvr_324.jpg',
+            'https://images-na.ssl-images-amazon.com/images/I/51AnjzwKqwL._SX342_.jpg',
+            'https://img1.etsystatic.com/167/0/12675259/il_340x270.1227978053_ke7c.jpg',
+            'https://cdn.shopify.com/s/files/1/0377/6221/products/Fight_club_b42ae92f-368c-4dc1-b7b9-0fec8a2d2b3c.jpg?v=1465810587',
+            'https://www.bjorn3d.com/wp-content/uploads/2015/06/Razer_FireFly_3.png'
+        ];
+
+        $("body").prepend("<div></div>");
+
+        $.each(images, function (index, element) {
+            var image = $("<img>");
+            image.attr({
+                "src": element,
+                "id": index
+            });
+            $("div").append(image);
+        });
+
+        $("img").each(function(index, element) {
+            var size = 100 * Math.random() + "%";
+            $(element).css("width", size);
+        });
+
+        $("img").hover(
+            function () {
+                $(this).css("border", "3px solid red");
+            },
+            function () {
+                $(this).css("border", "");
+            }
+        );
+
+        $("div").before("<h1> Gallery Title </h1>");
+        $("h1").css("text-align", "center");
+    </script>
+</body>
+
+</html>

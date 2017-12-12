@@ -1,0 +1,125 @@
+header {
+  width: 960px;
+  background-color: black;
+  color: white;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative; }
+  header ul {
+    list-style-type: none;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    padding-left: 0;
+    width: 30%; }
+  header li {
+    display: inline-block;
+    margin-right: 5%;
+    font-size: 18px; }
+    header li a {
+      text-decoration: none;
+      color: white; }
+    header li a:hover {
+      color: darkgray; }
+
+footer {
+  width: 960px;
+  background-color: black;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box; }
+
+main {
+  width: 960px;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 20px; }
+  main .content {
+    width: 60%;
+    margin: 0 auto; }
+    main .content h2, main .content h3, main .content h4 {
+      text-align: center; }
+  main a {
+    text-decoration: none; }
+  main .input {
+    text-align: center; }
+  main input {
+    margin-right: 10px; }
+  main label {
+    margin-left: 10px; }
+  main .checkbox {
+    margin-left: 10px; }
+  main .hidden {
+    display: none; }
+  main span {
+    font-weight: bold; }
+  main .authorInfo {
+    position: relative;
+    left: 30px; }
+  main .address {
+    float: left;
+    position: relative;
+    left: 30px; }
+  main iframe {
+    margin-left: 80px; }
+  main .company {
+    position: relative;
+    left: 30px; }
+  main .hr {
+    position: relative;
+    left: 30px; }
+
+.post {
+  width: 800px;
+  height: 300px;
+  margin: 50px auto;
+  background-color: whitesmoke;
+  color: black;
+  border: 1px solid darkgrey;
+  text-align: justify;
+  padding: 50px;
+  position: relative;
+  box-sizing: border-box; }
+
+.idNumber {
+  font-weight: bold;
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding-right: 20px; }
+
+.postsTitle {
+  text-align: center; }
+
+main p {
+  text-align: justify; }
+
+.link {
+  text-decoration: underline; }
+
+.save {
+  position: relative; }
+  .save textarea {
+    display: block;
+    margin: 0 auto 10px; }
+  .save input {
+    margin-bottom: 20px; }
+  .save label {
+    display: block; }
+  .save label, .save input {
+    margin-left: 25px; }
+  .save button {
+    position: relative;
+    left: 470px; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,54 @@
+@import "variables";
+
+.green {
+    background-color: $primary-color;
+    color: white;
+}
+
+body {
+    width: 960px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+
+    fieldset {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    input, button, select {
+        margin: 10px auto;
+        display: block;
+        width: 200px;
+    }
+
+    .button {
+        border-radius: 15%;
+        padding: 5px;
+    }
+
+    fieldset {
+        margin-bottom: 20px;
+    }
+}
+
+ol {
+    margin: 0 auto;
+    width: 33%;
+    text-align: center;
+    padding: 0;
+
+    li {
+        list-style: none;
+    }
+}
+
+div {
+    margin-bottom: 20px;
+}

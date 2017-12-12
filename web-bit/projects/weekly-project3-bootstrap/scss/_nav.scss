@@ -1,0 +1,19 @@
+nav {
+
+    a, button, .nav-link {
+    color: white;
+}
+
+    .navbar-dark, .navbar-toggler {
+        color: white !important;
+        background: $primary-color;
+        @media screen and (min-width: 768px) {
+            background: $secondary-color;
+            border-color: white !important;
+        }
+    }
+
+    strong {
+        color: white;
+        }
+}

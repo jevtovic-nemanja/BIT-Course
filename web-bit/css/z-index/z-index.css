@@ -1,0 +1,63 @@
+body {
+    width: 960px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: red;
+    text-align: center;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+}
+
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.relative1 {
+    position: relative;
+    bottom: 100px;
+    left: 100px;
+}
+
+.relative2 {
+    position: relative;
+    bottom: 200px;
+    left: 200px;
+}
+
+.relative3 {
+    position: relative;
+}
+
+.absolute1 {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    z-index: 2;
+}
+
+.absolute2 {
+    position: absolute;
+    top: 105px;
+    right: 100px;
+    z-index: 1;
+}
+
+.absolute3 {
+    position: absolute;
+    top: 205px;
+    right: 200px;
+}
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie Festival</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/models.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <h1 class="green">Movie Festival</h1>
+
+    <form>
+        <fieldset>
+            <legend>Create Movie</legend>
+            <input type="text" id="title" placeholder="Movie Title">
+            <input type="number" id="length" placeholder="Movie Length">
+
+            <select id="selectGenre">
+                <option value="none">-</option>
+                <option value="action">Action</option>
+                <option value="sf">SF</option>
+                <option value="horror">Horror</option>
+                <option value="comedy">Comedy</option>
+                <option value="thriller">Thriller</option>
+            </select>
+
+            <div id="movieError"></div>
+
+            <input type="button" class="button green" onclick="createMovie()" value="Create Movie">
+        </fieldset>
+
+        <div id="movieListHTML"></div>
+
+        <fieldset>
+            <legend>Create Program</legend>
+            <input type="date" id="programDate">
+
+            <div id="programError"></div>
+
+            <input type="button" class="button green" onclick="createProgram()" value="Create Program">
+        </fieldset>
+
+        <div id="programListHTML"></div>
+
+        <fieldset>
+            <legend>Add movies to program</legend>
+            <select id="addmovie-movie">
+                <option value="none">-</option>
+            </select>
+            <select id="addmovie-program">
+                <option value="none">-</option>
+            </select>
+
+            <div id="addMovieError"></div>
+
+            <input type="button" class="button green" onclick="addMovie()" value="Add movie to program">
+        </fieldset>
+
+        <div id="movie-in-program"></div>
+
+        <fieldset>
+            <legend>Preview festival</legend>
+            <input type="button" class="button green" onclick="festivalData()" value="Preview Festival Data">
+
+            <div id="festivalData"></div>
+
+            <div id="festivalDataError"></div>
+
+            <input type="text" id="festivalName" placeholder="Festival Name">
+            <input type="number" id="festivalMax" placeholder="Maximum Number of Movies">
+            <input type="button" class="button green" onclick="createFestival()" value="Create">
+            
+            <div id="festivalError"></div>
+
+            <div id="createdFestivals"></div>
+        </fieldset>
+
+    </form>
+</body>
+
+</html>

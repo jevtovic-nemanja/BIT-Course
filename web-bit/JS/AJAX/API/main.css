@@ -1,0 +1,13 @@
+img {
+    width: 50px;
+    position: relative;
+    top: 20px;
+}
+
+a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+}

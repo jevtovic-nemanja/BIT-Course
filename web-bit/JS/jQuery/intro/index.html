@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>jQuery Selectors</title>
+</head>
+
+<body>
+    <ul>
+        <li>First</li>
+        <li class="active">Second</li>
+        <li>Third</li>
+        <li>Fourth</li>
+        <li>Fifth</li>
+        <li>Sixth</li>
+        <li>Seventh</li>
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(function () {
+            $("li:first").addClass("border");
+            $("li").addClass("uppercase");
+            $("li .active").removeClass("active").addClass("blue");
+            var length = $("li").length;
+            var index = (length + 1) / 2;
+            var middle = $("li")[index];
+            $(middle).addClass("middle");
+        });
+    </script>
+</body>
+
+</html>

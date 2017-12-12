@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Insert JS</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <script>
+        var output = "Ja sam skripta";
+        console.log(output);
+    </script>
+    <script src="scripts.js">
+    </script>
+    <ul>
+        <li>Tekst</li>
+        <li>Tekst</li>
+        <li>Tekst</li>
+    </ul>
+    <ul class="second">
+        <li>Tekst</li>
+        <li>Tekst</li>
+        <li>Tekst</li>
+    </ul>
+    <ul>
+        <li>Treca lista</li>
+        <li>Treca lista</li>
+        <li>Treca lista</li>
+    </ul>
+    <div>
+        <ul>
+            <li>Traversing DOM</li>
+            <li>Traversing DOM</li>
+            <li>Traversing DOM</li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li>Traversing DOM</li>
+            <li class="active">Traversing DOM</li>
+            <li>Traversing DOM</li>
+        </ul>
+    </div>
+    <div>
+        <img class="selected" src="https://pbs.twimg.com/profile_images/757551595961851904/TwnHW2_a.jpg">
+        <img src="https://pbs.twimg.com/profile_images/757551595961851904/TwnHW2_a.jpg">
+        <img src="https://pbs.twimg.com/profile_images/757551595961851904/TwnHW2_a.jpg">
+    </div>
+    <div>
+        <img src="https://pbs.twimg.com/profile_images/757551595961851904/TwnHW2_a.jpg">
+        <img src="https://pbs.twimg.com/profile_images/757551595961851904/TwnHW2_a.jpg">
+        <img src="https://pbs.twimg.com/profile_images/757551595961851904/TwnHW2_a.jpg">
+    </div>
+    <form action="" method="POST">
+        <h3>Form<span id="get">Get</span></h3>
+        <hr>
+        <label for="name">Full name<input type="text" id="name" placeholder="Full Name"></label>
+        <label for="email">Email<input type="email" id="email" placeholder="Email" required></label>
+        <label for="phone">Contact Number<input type="text" id="phone" placeholder="Contact Number"></label>
+        <label for="address">Address<input type="text" id="address" placeholder="Address" required></label>
+    </form>
+    <button type="button" onclick="toggleEvent()">Toggle Background
+    </button>
+    <button type="button" onclick="turnOnEventAuto()">Turn On Background Auto
+    </button>
+    <button type="button" class="yellow" onclick="turnOff()">Turn Off
+    </button>
+    <button type="button" class="yellow" onclick="toggleEventAuto()">Toggle Event Auto
+    </button>
+    <div id="blank"></div>
+    <input type="text" id="chat">
+    <input type="submit" value="send" onclick="chat()">
+</body>
+
+</html>

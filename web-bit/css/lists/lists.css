@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#first {
+    list-style: circle inside;
+}
+
+#second {
+    list-style-type: disc; /* square, none */
+}
+
+#third {
+    list-style-type: upper-alpha outside;
+}
+
+#fourth {
+    list-style-type: upper-roman; /* decimal, decimal-leading-zero, lower-alpha, lower-roman */
+}
+
+.imageAndPosition {
+    width: 200px;
+    list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAMAAADXT/YiAAAACVBMVEXugu6gIPD/AP/+Nx95AAAAGUlEQVQImWNgwACMQMwEAowksBihAM5gBAALqwBPQmmwegAAAABJRU5ErkJggg==")
+}
+
+#positionInside {
+    list-style-position: inside;
+}

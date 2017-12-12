@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AJAX</title>
+</head>
+
+<body>
+    <label for="input">IP</label>
+    <input type="text" id="input">
+    <input type="submit" value="Find" id="submit">
+    <div id="div"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+    <script>
+        $("#submit").on("click", function () {
+            var find = $("#input").val();
+            var url = "http://freegeoip.net/xml/" + find;
+            $.ajax(url).done(function (xmlStructure) {
+                var country = $(xmlStructure).find("CountryName").text();
+                var timeZone = $(xmlStructure).find("TimeZone").text();
+                var latitude = $(xmlStructure).find("Latitude").text();
+                var longitude = $(xmlStructure).find("Longitude").text();
+                $("div").append(country, " ", timeZone, " ", latitude, " ", longitude);
+            });
+        })
+    </script>
+
+    <script>
+        document.addEventListener("keydown", function (event) {
+            if (event.keyCode === 13) {
+                var find = $("#input").val();
+                var url = "http://freegeoip.net/xml/" + find;
+                $("div").load(url);
+            }
+        })
+    </script>
+    
+    <script>
+        document.addEventListener("keydown", function (event) {
+            if (event.keyCode === 32) {
+                var find = $("#input").val();
+                var url = "http://freegeoip.net/json/" + find;
+    
+                var request = $.ajax({
+                    url: url,
+                    dataType: "json"
+                })
+                request.done(function (object) {
+                    $("div").append(object.country_name, " ", object.time_zone, " ", object.latitude, " ", object.longitude);
+                })
+
+                // $.getJSON(url, function (object) {
+                //     $("div").append(object.country_name, " ", object.time_zone, " ", object.latitude, " ", object.longitude);
+                // })
+            }
+        })
+    </script>
+
+</body>
+
+</html>

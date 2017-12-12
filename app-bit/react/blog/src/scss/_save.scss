@@ -1,0 +1,27 @@
+.save {
+    
+    position: relative;
+
+    textarea {
+        display: block;
+        margin: 0 auto 10px;
+    }
+
+    input {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+    }
+
+    label, input {
+        margin-left: 25px;
+    }
+
+    button {
+        position: relative;
+        left: 470px;
+    }
+
+}

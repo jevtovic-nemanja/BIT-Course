@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap Project</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="vendor/normalize.css">
+  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark blue">
+    <a class="navbar-brand text-uppercase" href="#header">
+      <strong>Bit Student</strong>
+    </a>
+    <button class="navbar-toggler text-uppercase" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">Menu
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-uppercase" href="#portfolio">
+            <strong>Portfolio</strong>
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase" href="#about">
+            <strong>About</strong>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase" href="#contact">
+            <strong>Contact</strong>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header class="green" id="header">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <img src="images/profile.png" class="img-fluid">
+          <h3 class="text-uppercase ">
+            <strong>Bootstrap and SASS</strong>
+          </h3>
+          <div class="mx-auto">
+            <hr class="hr1">
+            <hr class="hr2">
+          </div>
+          <h4>Developer - Graphic Artist - User Experience Designer</h4>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="white">
+      <section class="container portfolio" id="portfolio">
+        <div class="row">
+          <div class="col text-center">
+            <h1 class="text-uppercase">
+              <strong>Portfolio</strong>
+            </h1>
+            <div class="mx-auto">
+              <hr class="hr1">
+              <hr class="hr2">
+            </div>
+            <img src="images/portfolio/cabin.png" class="img-fluid">
+            <img src="images/portfolio/cake.png" class="img-fluid">
+            <img src="images/portfolio/circus.png" class="img-fluid">
+            <img src="images/portfolio/game.png" class="img-fluid">
+            <img src="images/portfolio/safe.png" class="img-fluid">
+            <img src="images/portfolio/submarine.png" class="img-fluid">
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="green">
+      <section class="container about" id="about">
+        <div class="row">
+          <div class="col text-center">
+            <h1 class="text-uppercase">
+              <strong>about</strong>
+            </h1>
+            <div class="mx-auto">
+              <hr class="hr1">
+              <hr class="hr2">
+            </div>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, blanditiis quaerat. Veritatis unde ducimus
+              mollitia harum placeat ipsa optio sint, vitae enim fuga odit explicabo doloribus deserunt hic accusantium quia.</p>
+            <p class="text-justify">Molestiae itaque consequuntur voluptas alias ratione tempore, necessitatibus excepturi sequi quis modi! Cum cumque
+              pariatur est quam aliquid! Quas quae soluta consequatur autem debitis, quo vitae quaerat ipsum est earum!</p>
+            <button type="button" class="green">
+              <i class="fa fa-info-circle" aria-hidden="true"></i> Find Out More</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="white">
+      <section class="container contact" id="contact">
+        <div class="row">
+          <div class="col text-center">
+            <h1 class="text-uppercase">
+              <strong>contact me</strong>
+            </h1>
+            <div class="mx-auto">
+              <hr class="hr1">
+              <hr class="hr2">
+            </div>
+            <div class="text-left">
+              <form action="" method="post">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input type="text" id="phone" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+                <button class="green" type="submit">
+                  <strong>Send</strong>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="blue">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <div class="footer-p">
+            <h3 class="text-uppercase">
+              <strong>Location</strong>
+            </h3>
+            <p>Centar za obrazovanje
+              <br> BIT TECHNOLOGY
+              <br> Nemanjina 4/I, Beograd
+            </p>
+          </div>
+          <div class="footer-p">
+            <h3 class="text-uppercase">
+              <strong>Around the web</strong>
+            </h3>
+            <p>
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x" aria-hidden="true"></i>
+              </span>
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-google-plus fa-stack-1x" aria-hidden="true"></i>
+              </span>
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x" aria-hidden="true"></i>
+              </span>
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x" aria-hidden="true"></i>
+              </span>
+            </p>
+          </div>
+          <div class="footer-p">
+            <h3 class="text-uppercase">
+              <strong>More details</strong>
+            </h3>
+            <p>We believe that the future of Serbia firmly depends on our ability to scale the number of individuals involved
+              in the IT sector. That is why we founded Bit.</p>
+          </div>
+          <div>
+            <p class="copyright">Copyright © Bit Student 2017</p>
+            <p class="small">
+              <small>Bit thanks to Start Bootstrap!</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+</body>
+</html>

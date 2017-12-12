@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Make poster</title>
+</head>
+<body width="960px">
+    <table align="center">
+        <tr>
+            <td>
+                <br><br>
+                <a href="../posters/index.html" target="_blank">Back to Homepage</a>
+                <br><br>
+                <form action="../posters/poster.html" method="post">
+                    <fieldset>
+                        <legend>Top Headline</legend>
+                        <label for="topheadline">Headline text:</label>
+                        <input type="text" name="topheadline" id="topheadline">
+                    </fieldset>
+                <br>
+                    <fieldset>
+                        <legend>Images</legend>
+                        <label for="image1">Image 1:</label>
+                        <input type="file" id="image1" name="image1"><br><br>
+                        <label for="image2">Image 2:</label>
+                        <input type="file" id="image2" name="image2"><br><br>
+                        <label for="image3">Image 3:</label>
+                        <input type="file" id="image3" name="image3"><br>
+                    </fieldset>
+                <br>
+                    <fieldset>
+                        <legend>Reward</legend>
+                        <label for="reward">Reward money:</label>
+                        <input type="text" id="reward" name="reward">
+                    </fieldset>
+                <br><fieldset>
+                        <legend>Info</legend>
+                        <label for="aliases">Aliases:</label><br>
+                        <input type="text" name="aliases" id="aliases"><br><br>
+
+                        <label for="birthdate">Birth:</label><br>
+                        <input type="date" id="birthdate" name="birthdate" required><br><br>
+                    
+                        <label for="hair">Hair:</label><br>
+                        <input type="text" id="hair" name="hair"><br><br>
+                    
+                        <label for="eyes">Eyes:</label><br>
+                        <input type="text" id="eyes" name="eyes"><br><br>
+                    
+                        <label for="height">Height:</label><br>
+                        <input type="text" id="height" name="height"><br><br>
+                    
+                        <label for="weight">Weight:</label><br>
+                        <input type="text" id="weight" name="weight"><br><br>
+                    
+                        <label for="sex">Sex</label><br>
+                        <input type="text" id="sex" name="sex"><br><br>
+                    
+                        <label for="idnumber">ID Number:</label><br>
+                        <input type="number" id="idnumber" name="idnumber" required><br><br>
+                    
+                        <label for="occupation">Occupation:</label><br>
+                        <input type="text" id="occupation" name="occupation"><br><br>
+                    </fieldset>
+                <br>
+                    <fieldset>
+                        <legend>Remarks</legend>
+                        <textarea name="remarks" id="remarks" cols="130" rows="10" placeholder="Remarks text" width="100%"></textarea>
+                    </fieldset>
+                <br>
+                    <fieldset>
+                        <legend>Caution</legend>
+                        <textarea name="caution" id="caution" cols="130" rows="10" placeholder="Caution text"></textarea>
+                    </fieldset>
+                <br>
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Create Poster">
+                </form>
+            </td>   
+        </tr>
+    </table>
+</body>
+</html>

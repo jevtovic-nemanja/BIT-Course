@@ -1,0 +1,47 @@
+.showTitle {
+    padding-top: 80px;
+}
+
+#divImage {
+
+    width: 90%;
+    margin: 20px auto;
+
+    @media screen and (min-width: 992px) {
+        width: 45%;
+        margin: 2%;
+    }
+
+    img {
+        width: 100%;
+    }
+};
+
+#divLists {
+    margin: 0 auto;
+    width: 90%;
+
+    @media screen and (min-width: 992px) {
+        width: 40%;
+        margin: 5%;
+    }
+}
+
+#divSummary {
+    margin: 20px auto;
+    width: 90%;
+
+    @media screen and (min-width: 992px) {
+        width: 100%;
+    }
+    
+    h3 {
+        padding: 0;
+    }
+}
+
+#divMain {
+    @media screen and (min-width: 992px) {
+        width: 70%;
+    }
+}

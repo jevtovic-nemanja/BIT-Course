@@ -1,0 +1,61 @@
+$primary-color: #18bc9c;
+$secondary-color: #2c3e50;
+
+.green {
+    background: $primary-color;
+    color: white;
+}
+
+.blue {
+    background: $secondary-color;
+    color: white;
+}
+
+.white {
+    background: white;
+    color: black;
+}
+
+@mixin underline {
+    hr {
+        width: 80px;
+        display: inline-block;
+    }
+
+    h1, h3 {
+        position: relative;
+    }
+
+    .hr1::after {
+        content: "\f005";
+        font-family: FontAwesome;
+        display: block;
+        margin-top: 15px;
+        position: relative;
+        bottom: 28px;
+        left: 50px;
+        height: 20px;
+        z-index: 1;
+    }
+
+    .hr1 {
+        position: relative;
+        right: 7px;
+    }
+
+    .hr2 {
+        position: relative;
+        bottom: 16.6px;
+        left: 9px;
+    }
+}
+
+@mixin paddings {
+        padding: 30px;
+        @media screen and (min-width: 768px) {
+            padding: 100px
+        }
+        @media screen and (min-width: 992px) {
+            padding: 150px;
+        }
+}

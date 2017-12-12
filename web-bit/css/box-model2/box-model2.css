@@ -1,0 +1,41 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div {
+    border: 2px dashed red;
+    padding: 0;
+    margin: 20px;
+}
+
+#title {
+    width: 960px;
+    text-align: center;
+    margin: 50px auto;
+    padding: 50px 0;
+    background: red;
+    border-radius: 10px;
+    color: goldenrod;
+    -webkit-box-shadow: 15px 20px 31px 2px rgba(138,134,138,0.78);
+    -moz-box-shadow: 15px 20px 31px 2px rgba(138,134,138,0.78);
+    box-shadow: 15px 20px 31px 2px rgba(138,134,138,0.78);
+    font-family: "Nosifer";
+}
+
+#first {
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#second {
+    display: none;
+}
+
+#third {
+    width: 200px;
+    height: 600px;
+    display: inline-block;
+    overflow: scroll;
+    vertical-align: top;
+}

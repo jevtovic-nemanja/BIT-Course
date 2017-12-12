@@ -1,0 +1,37 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center; 
+}
+
+th {
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+
+img {
+    height: 100px;
+}
+
+tr.shaded {
+    background-color: lightgray;
+}
+
+tr:hover {
+    background-color: goldenrod;
+}

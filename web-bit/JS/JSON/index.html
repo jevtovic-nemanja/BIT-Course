@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>JSON</h3>
+        <p>{ "meta": { "limit": 10, "next": null, "offset": 0, "previous": null, "total_count": 1 }, "drivers": [ { "id": 989,
+            "is_active": true, "status": "AVAILABLE", "total_jobs": 36, "created_at": "2015-08-13T16:28:12.825799", "last_active_at":
+            "2016-01-12T10:28:12.825799", "cars": [ { "type": "Volkswagen", "category": "STANDARD" }, { "type": "BMW", "category":
+            "LUX" } ], "geolocation": { "lat": "52.12724", "lng": "11.60905" }, "rating": 4.55, "min_ride_distance": "5km",
+            "working_days": [ "MONDAY", "WEDNESDAY", "FRIDAY", "SUNDAY" ] } ] }
+        </p>
+    </div>
+    <div>
+        <h3>JSON formatted</h3>
+        <p>{ 
+            <br>&emsp;"meta": {
+            <br> &emsp;&emsp;"limit": 10,
+            <br> &emsp;&emsp;"next": null,
+            <br> &emsp;&emsp;"offset": 0,
+            <br> &emsp;&emsp;"previous": null,
+            <br> &emsp;&emsp;"total_count": 1
+            <br> &emsp;},
+            <br> &emsp;"drivers": [
+            <br> &emsp;&emsp;{
+            <br> &emsp;&emsp;&emsp;"id": 989,
+            <br> &emsp;&emsp;&emsp;"is_active": true,
+            <br> &emsp;&emsp;&emsp;"status": "AVAILABLE",
+            <br> &emsp;&emsp;&emsp;"total_jobs": 36,
+            <br> &emsp;&emsp;&emsp;"created_at": "2015-08-13T16:28:12.825799",
+            <br> &emsp;&emsp;&emsp;"last_active_at": "2016-01-12T10:28:12.825799",
+            <br> &emsp;&emsp;&emsp;"cars": [
+            <br> &emsp;&emsp;&emsp;&emsp;{
+            <br> &emsp;&emsp;&emsp;&emsp;&emsp;"type": "Volkswagen",
+            <br> &emsp;&emsp;&emsp;&emsp;&emsp;"category": "STANDARD"
+            <br> &emsp;&emsp;&emsp;&emsp;},
+            <br> &emsp;&emsp;&emsp;&emsp;{
+            <br> &emsp;&emsp;&emsp;&emsp;&emsp;"type": "BMW",
+            <br> &emsp;&emsp;&emsp;&emsp;&emsp;"category": "LUX"
+            <br> &emsp;&emsp;&emsp;&emsp;}
+            <br> &emsp;&emsp;&emsp;],
+            <br> &emsp;&emsp;&emsp;"geolocation": {
+            <br> &emsp;&emsp;&emsp;&emsp;"lat": "52.12724",
+            <br> &emsp;&emsp;&emsp;&emsp;"lng": "11.60905"
+            <br> &emsp;&emsp;&emsp;},
+            <br> &emsp;&emsp;&emsp;"rating": 4.55,
+            <br> &emsp;&emsp;&emsp;"min_ride_distance": "5km",
+            <br> &emsp;&emsp;&emsp;"working_days": [
+            <br> &emsp;&emsp;&emsp;&emsp;"MONDAY",
+            <br> &emsp;&emsp;&emsp;&emsp;"WEDNESDAY",
+            <br> &emsp;&emsp;&emsp;&emsp;"FRIDAY",
+            <br> &emsp;&emsp;&emsp;&emsp;"SUNDAY"
+            <br> &emsp;&emsp;&emsp;]
+            <br> &emsp;&emsp;}
+            <br> &emsp;]
+            <br> }
+        </p>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th>Object</th>
+            </tr>
+            <tr>
+                <td>meta: Meta</td>
+            </tr>
+            <tr>
+                <td>drivers: [Driver]</td>
+            </tr>
+        </table>
+    
+        <table>
+            <tr>
+                <th>Object: Meta</th>
+            </tr>
+            <tr>
+                <td>limit: number</td>
+            </tr>
+            <tr>
+                <td>next: null <span>(string)</span></td>
+            </tr>
+            <tr>
+                <td>offset: number</td>
+            </tr>
+            <tr>
+                <td>previous: null <span>(string)</span></td>
+            </tr>
+            <tr>
+                <td>total_count: number</td>
+            </tr>
+        </table>
+    
+        <table>
+            <tr>
+                <th>Object: Driver</th>
+            </tr>
+            <tr>
+                <td>id: number <span>(unique)</span></td>
+            </tr>
+            <tr>
+                <td>is_active: boolean</td>
+            </tr>
+            <tr>
+                <td>status: string</td>
+            </tr>
+            <tr>
+                <td>total_jobs: number</td>
+            </tr>
+            <tr>
+                <td>created_at: string <span>(date)</span></td>
+            </tr>
+            <tr>
+                <td>last_active_at: string <span>(date)</span></td>
+            </tr>
+            <tr>
+                <td>cars: [Car]</td>
+            </tr>
+            <tr>
+                <td>geolocation: Geolocation</td>
+            </tr>
+            <tr>
+                <td>rating: number</td>
+            </tr>
+            <tr>
+                <td>min_ride_distance: string <span>(Distance (unit, value, isMin)</span></td>
+            </tr>
+            <tr>
+                <td>working_days: [string]</td>
+            </tr>
+        </table>
+    
+        <table>
+            <tr>
+                <th>Object: Car</th>
+            </tr>
+            <tr>
+                <td>type: string</td>
+            </tr>
+            <tr>
+                <td>category: string</td>
+            </tr>
+        </table>
+    
+        <table>
+            <tr>
+                <th>Object: Geolocation</th>
+            </tr>
+            <tr>
+                <td>lat: string <span>(number)</span></td>
+            </tr>
+            <tr>
+                <td>lng: string <span>(number)</span></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+nav li {
+  list-style: none; }
+nav .searchList {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: black;
+  color: whitesmoke;
+  width: 200px; }
+nav a {
+  text-decoration: none;
+  color: whitesmoke; }
+
+h3 {
+  padding: 20px; }
+
+.card {
+  width: 90%;
+  margin: 20px auto; }
+  @media screen and (min-width: 768px) {
+    .card {
+      width: 45%;
+      margin: 2%; } }
+  @media screen and (min-width: 992px) {
+    .card {
+      width: 29%;
+      margin: 2%; } }
+  .card img {
+    width: 100%; }
+  .card .card-block {
+    padding: 0; }
+
+footer {
+  background-color: black;
+  color: whitesmoke;
+  font-weight: bold;
+  padding: 20px; }
+
+.showTitle {
+  padding-top: 80px; }
+
+#divImage {
+  width: 90%;
+  margin: 20px auto; }
+  @media screen and (min-width: 992px) {
+    #divImage {
+      width: 45%;
+      margin: 2%; } }
+  #divImage img {
+    width: 100%; }
+
+#divLists {
+  margin: 0 auto;
+  width: 90%; }
+  @media screen and (min-width: 992px) {
+    #divLists {
+      width: 40%;
+      margin: 5%; } }
+
+#divSummary {
+  margin: 20px auto;
+  width: 90%; }
+  @media screen and (min-width: 992px) {
+    #divSummary {
+      width: 100%; } }
+  #divSummary h3 {
+    padding: 0; }
+
+@media screen and (min-width: 992px) {
+  #divMain {
+    width: 70%; } }
+
+/*# sourceMappingURL=main.css.map */

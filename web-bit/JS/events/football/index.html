@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Football</title>
+</head>
+
+<body id="body">
+    <img src="images/player.png" id="player">
+    <button type="button" id="stop">Stop Moving</button>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+        </script>
+    <!-- <script>
+            var body = document.querySelector("body");
+            var stop = document.getElementById("stop");
+            body.addEventListener("click", movePlayer);
+            stop.addEventListener("click", stopMoving);
+
+            function movePlayer() {
+                var player = document.getElementById("player");
+                var x = event.clientX;
+                var y = event.clientY;
+            player.style.left = x + "px";
+            player.style.top = y + "px";
+            }
+
+            function stopMoving() {
+                body.removeEventListener("click", movePlayer);
+            }
+        </script> -->
+    <script>
+        var imageDisplacement = $("#player").width() / 2;
+
+        $("body").on("click", function (event) {
+            $("#player").offset({top: event.pageY - imageDisplacement, left: event.pageX - imageDisplacement});
+        });
+
+        $("#stop").on("click", function () {
+            $("body").off("click");
+        });
+    </script>
+</body>
+
+</html>

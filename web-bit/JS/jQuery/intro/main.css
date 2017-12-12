@@ -1,0 +1,19 @@
+.active {
+    color: red;
+}
+
+.border {
+    border-bottom: 1px solid black;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.blue {
+    color: blue;
+}
+
+.middle {
+    background-color: green;
+}

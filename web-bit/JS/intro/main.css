@@ -1,0 +1,119 @@
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blueUppercase {
+    background-color: blue;
+    text-transform: uppercase;
+}
+
+.active {
+    background-color: orange;
+}
+
+.selected {
+    border: 3px solid red;
+}
+ 
+div img {
+    width: 30%;
+}
+
+form {
+    background-color: rgb(241, 231, 231);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 350px;
+    margin: 0 auto;
+}
+
+h3 {
+    color: black;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 0;
+    margin-bottom: 2px;
+    font-size: 32px;
+}
+
+h3 > span {
+    color: goldenrod;
+}
+
+#submit {
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 6px;
+    width: 100px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    text-indent: 0;
+}
+
+#name {
+    display: block;
+    background-image: url("name.png");
+}
+
+#email {
+    display: block;
+    background-image: url("email.png");
+}
+
+#phone {
+    display: block;
+    background-image: url("phone.png");
+}
+
+#address {
+    display: block;
+    margin-bottom: 30px;
+    background-image: url("address.png");
+}
+
+input {
+    margin: 2px auto 10px auto;
+    border-radius: 5px;
+    width: 75%;
+    text-indent: 25px;
+    background-position: 1px 1px;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+}
+
+label {
+    margin-left: 45px;
+}
+
+.red-border {
+    border: 2px solid red;
+}
+
+button {
+    width: 200px;
+    background-color: red;
+    color: white;
+    border: 1px solid blue;
+    display: block;
+    margin: 0 auto;
+}
+
+.yellow {
+    background-color: yellow;
+    color: black;
+}
+
+#blank {
+    height: 600px;
+    background-color: whitesmoke;
+}
+
+#blank p {
+    background-color: grey;
+}
