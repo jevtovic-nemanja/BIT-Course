@@ -7,14 +7,14 @@ body {
     padding: 0;
     margin: 0;
     background-image: url("images/bg.jpg");
-    background-size: cover;
     background-repeat: repeat-x;
-    position: relative;
+    background-size: cover;
+    background-position: left bottom;
 }
 
 #mario_div {
     position: fixed;
-    bottom: 165px;
+    bottom: 135px;
     left: 40%;
     width: 304px;
     height: 256px
