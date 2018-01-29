@@ -2,31 +2,26 @@
 
 
 function mostFrequentItem(array) {
+    let maxFrequency = 1;
 
     const countedItemsObj = array.reduce((items, item) => {
         if (item in items) {
             items[item]++;
+            maxFrequency = items[item] > maxFrequency ? items[item] : maxFrequency;
         }
         else {
             items[item] = 1;
         }
         return items;
     }, {});
+    
+    let results = [];
 
-    const countedItemsArray = Object.entries(countedItemsObj);
-
-    let maxCounter = 0;
-
-    countedItemsArray.map(item => {
-        if (item[1] > maxCounter) {
-            maxCounter = item[1];
+    for (const prop in countedItemsObj) {
+        if (countedItemsObj[prop] === maxFrequency) {
+            results.push(`${prop}`);
         }
-    })
-
-    const results = countedItemsArray
-        .filter(item => item[1] === maxCounter)
-        .map(item => item[0])
-        .join(", ");
+    }
 
     return results;
 }
