@@ -67,27 +67,21 @@ const uiController = (() => {
 
             let contentP = "";
             for (let i = 0; i < exam.listPassedStudents.length; i++) {
-                contentP += `<div><div class="passed-item-description">${exam.listPassedStudents[i].name}</div>
-                <div class="right clearfix">
-                    <div class="passed-item-value">${exam.listPassedStudents[i].grade}</div>
-                    <div class="item-delete">
-                        <button class="passed-item-delete-btn">x</i>
-                        </button>
-                    </div>
-                </div></div>`;
+                contentP += `<div>
+                                <span class="passed-item-description d-inline-block">${exam.listPassedStudents[i].name}</span>
+                                <span class="passed-item-value">${exam.listPassedStudents[i].grade}</span>
+                                <button class="passed-item-delete-btn">x</button>
+                            </div>`;
             }
             passedList.innerHTML = contentP;
 
             let contentF = "";
             for (let j = 0; j < exam.listFailedStudents.length; j++) {
-                contentF += `<div class="failed-item-description">${exam.listFailedStudents[j].name}</div>
-                <div class="right clearfix">
-                    <div class="failed-item-value">${exam.listFailedStudents[j].grade}</div>
-                    <div class="item-delete">
-                        <button class="failed-item-delete-btn">x</i>
-                        </button>
-                    </div>
-                </div>`;
+                contentF += `<div>
+                                <span class="failed-item-description d-inline-block">${exam.listFailedStudents[j].name}</span>
+                                <span class="failed-item-value">${exam.listFailedStudents[j].grade}</span>
+                                <button class="failed-item-delete-btn">x</button>
+                            </div>`;
             }
             failedList.innerHTML = contentF;
         },

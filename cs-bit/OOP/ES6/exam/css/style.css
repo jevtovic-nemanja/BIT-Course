@@ -234,11 +234,6 @@ h2 {
     color: #FF5049;
 }
 
-
-.item-delete {
-    float: left;
-}
-
 .passed-item-delete-btn, .failed-item-delete-btn {
     font-size: 22px;
     background: none;
