@@ -1,4 +1,5 @@
 //Closures have access to free variables: variables which are not local, nor passed as parameters.
+//A closure is created every time the outter function returns.
 
 //Closures can be used for factories and making stuff private.
 
@@ -38,7 +39,7 @@ console.log(isPassword.guessPassword("xh38sk"));
 
 //Closures can be used in for loops, but we have to use let.
 
-//var - when i is changed in the loop, it automatically changes in the results array too
+//Closures are formed when the log function executes. By then i = 3;
 var resultsVar = [];
 
 for (var i = 0; i < 3; i++) {
@@ -59,3 +60,29 @@ for (let i = 0; i < 3; i++) {
 resultsLet[0]();
 resultsLet[1]();
 resultsLet[2]();
+
+//Or we can use another closure.
+
+var resultsVarClosure = [];
+
+var createClosure = i => () => console.log(i);
+
+for (var i = 0; i < 3; i++) {
+    resultsVarClosure[i] = createClosure(i);
+}
+
+resultsVarClosure[0]();
+resultsVarClosure[1]();
+resultsVarClosure[2]();
+
+//Or an IIFE.
+
+var resultsVarIIFE = [];
+
+for (var i = 0; i < 3; i++) {
+    resultsVarIIFE[i] = (i => () => console.log(i))(i);
+}
+
+resultsVarIIFE[0]();
+resultsVarIIFE[1]();
+resultsVarIIFE[2]();
