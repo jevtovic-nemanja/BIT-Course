@@ -15,7 +15,7 @@ function mostFrequentItem(array) {
         return items;
     }, {});
     
-    let results = [];
+    const results = [];
 
     for (const prop in countedItemsObj) {
         if (countedItemsObj[prop] === maxFrequency) {
