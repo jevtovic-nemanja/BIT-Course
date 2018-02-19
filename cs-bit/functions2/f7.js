@@ -29,13 +29,8 @@ console.log(maximumElement([1, "a", 3, 5, 899, null, false, Infinity, NaN, 11]))
 
 
 function maximumElement1(array) {
-    var arrayResult = [];
-    arrayResult = array.filter(function(element) {
-        if (typeof element === "number" && isFinite(element))
-        return element;
-    })
-    arrayResult.sort();
-    return arrayResult[arrayResult.length - 1];
+    const filteredArray = array.filter(item => isFinite(parseFloat(item)));
+    return Math.max(...filteredArray);
 }
 
 

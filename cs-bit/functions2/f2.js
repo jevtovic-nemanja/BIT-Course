@@ -24,18 +24,13 @@ console.log(alternateArrays(["a", "b", "c"], [1, 2, 3, 4]));
 
 
 function alternateArrays1(array1, array2) {
-    var arrayResults = [];
-    var counter = 0;
-    for (var i = 0; i < array1.length + array2.length + counter; i++) {
-        if (i % 2 === 0) {
-            arrayResults.push(array1.shift());
-            counter++;
-        } else {
-            arrayResults.push(array2.shift());
-            counter++;
-        }
+    const maxLength = Math.max(array1.length, array2.length);
+    const result = [];
+    for (let i = 0; i < maxLength; i++) {
+        result.push(array1.shift());
+        result.push(array2.shift());
     }
-    return arrayResults;
+    return result;
 }
 
 

@@ -4,7 +4,7 @@
 // [7, 9, 0, -2], 2 -> [0, -2] 
 
 
-function lastElement(array,n) {
+function lastElement(array, n) {
     var lastElements = [];
     n = n || 1;
     for (var i = 0; i < n; i++) {
@@ -17,10 +17,8 @@ function lastElement(array,n) {
 console.log(lastElement([7, 9, 0, -2, 4, 5, "A"], 4));
 
 
-function lastElement1(array,n) {
-    n = n || 1;
-    var result = array.slice(array.length - n, array.length);
-    return result;
+function lastElement1(array, n = 1) {
+    return array.slice(-n);
 }
 
 

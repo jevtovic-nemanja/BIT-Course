@@ -25,10 +25,8 @@ function insertString(string, insertion, n) {
 console.log(insertString("My random string", "JS ", 6));
 
 
-function insertString1(string, insertion, n) {
-    n = n || 1;
-    var result = string.slice(0,n-1) + insertion + string.slice(n-1,string.length);
-    return result;
+function insertString1(string, insertion, n = 1) {
+    return string.slice(0, n - 1) + insertion + string.slice(n - 1);
 }
 
 

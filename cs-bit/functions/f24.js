@@ -2,23 +2,20 @@
 
 
 function mostFrequentItem(array) {
-    let maxFrequency = 1;
+    let mostFrequent = 1;
 
-    const countedItemsObj = array.reduce((items, item) => {
-        if (item in items) {
-            items[item]++;
-            maxFrequency = items[item] > maxFrequency ? items[item] : maxFrequency;
-        }
-        else {
-            items[item] = 1;
-        }
-        return items;
+    const countedObj = array.reduce((acc, cur) => {
+        cur in acc
+            ? (acc[cur]++, mostFrequent = Math.max(mostFrequent, acc[cur]))
+            : acc[cur] = 1;
+        return acc;
     }, {});
+
     
     const results = [];
 
-    for (const prop in countedItemsObj) {
-        if (countedItemsObj[prop] === maxFrequency) {
+    for (const prop in countedObj) {
+        if (countedObj[prop] === mostFrequent) {
             results.push(prop);
         }
     }

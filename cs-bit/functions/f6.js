@@ -35,11 +35,7 @@ console.log(firstOccurence("djokajd", "d"));
 
 function firstOccurence1(input, letter) {
     var index = input.indexOf(letter);
-    if (index === -1) {
-        return index;
-    } else {
-        return humanize(index + 1);
-    }
+    return index === -1 ? index : humanize(index + 1);
 }
 
 

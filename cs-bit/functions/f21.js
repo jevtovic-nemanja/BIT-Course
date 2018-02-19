@@ -10,19 +10,12 @@
 
 function isPerfect(number) {
     var sum = 0;
-    var output = "";
     for (var i = 0; i < number; i++) {
         if (number % i === 0) {
             sum += i;
         }
     }
-    if (number === sum) {
-        output = number + " is a perfect number";
-    } else {
-        output = number + " is not a perfect number";
-    }
-    return output;
-
+    return number === sum ? number + " is a perfect number" : number + " is not a perfect number";
 }
 
 

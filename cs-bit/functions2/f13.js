@@ -19,3 +19,10 @@ function greaterThanAverage() {
 
 
 console.log(greaterThanAverage(1,2,3,4,5,6));
+
+const greaterThanAverage1 = (...args) => {
+    return args.filter(item => item > args.reduce((acc, cur) => acc + cur, 0) / args.length);
+};
+
+
+console.log(greaterThanAverage1(1,2,3,4,5,6));

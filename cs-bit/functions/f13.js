@@ -23,14 +23,7 @@ console.log(arrayStringsToArrayNumbers(["a", "b", "13", "c", "85", "d", "11", "2
 
 
 function arrayStringsToArrayNumbers1(arrayStrings) {
-    var arrayParseInt = [];
-    arrayStrings.forEach(function (element) {
-        arrayParseInt.push(parseInt(element));
-    })
-    var arrayNumbers = arrayParseInt.filter(function(element) {
-        return isFinite(element);
-    });
-    return arrayNumbers;
+    return arrayStrings.map(string => parseFloat(string)).filter(num => num === num);
 }
     
 

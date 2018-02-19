@@ -13,3 +13,11 @@ function vowelCount(string) {
 
 
 console.log(vowelCount("participacija"));
+
+const vowelCount1 = string => {
+    const vowels = ["a", "e", "i", "o", "u"];
+    return string.split("").filter(unit => vowels.includes(unit.toLowerCase())).length;
+};
+
+
+console.log(vowelCount1("participacijA"));

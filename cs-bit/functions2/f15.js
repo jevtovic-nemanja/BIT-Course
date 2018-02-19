@@ -42,4 +42,34 @@ function printInFrame(array) {
 }
 
 
-console.log(printInFrame(["Hello", "World", "in", "a", "frame", "frames","a"]));
+console.log(printInFrame(["Hello", "World", "in", "a", "frame", "frames", "a"]));
+
+if (!String.prototype.padEnd) {
+    String.prototype.padEnd = function padEnd(targetLength,padString) {
+        targetLength = targetLength>>0; //floor if number or convert non-number to 0;
+        padString = String((typeof padString !== 'undefined' ? padString : ' '));
+        if (this.length > targetLength) {
+            return String(this);
+        }
+        else {
+            targetLength = targetLength-this.length;
+            if (targetLength > padString.length) {
+                padString += padString.repeat(targetLength/padString.length); //append to original to ensure we are longer than needed
+            }
+            return String(this) + padString.slice(0,targetLength);
+        }
+    };
+}
+
+const printInFrame1 = array => {
+    const frameWidth = Math.max(...(array.map(item => item.length))) + 4;
+    const border = "*".repeat(frameWidth) + "\n";
+    let body = "";
+    array.forEach(string => {
+        const paddedString = string.padEnd(frameWidth - 3);
+        body += "* " + paddedString + "*\n";
+    });
+    return border + body + border;
+};
+
+console.log(printInFrame1(["Hello", "World", "in", "a", "frame", "frames", "a"]));

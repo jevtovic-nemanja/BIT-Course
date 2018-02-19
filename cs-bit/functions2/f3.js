@@ -20,7 +20,7 @@ console.log(rotateArray([1, 2, 3, 4, 5, 6, 1, 2], 5));
 
 function rotateArray1(array, k) {
     const end = array.slice(0, k);
-    const start = array.slice(k, array.length);
+    const start = array.slice(k);
     return [...start, ...end];
 }
 

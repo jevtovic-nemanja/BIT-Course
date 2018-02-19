@@ -19,11 +19,7 @@ console.log(arrayToString([NaN, 0, 15, false, -22, '', undefined, 47, null, Infi
 
 
 function arrayToString1(array) {
-    var arrayFiltered = array.filter(function(element) {
-        return isFinite(element)
-    });
-    var result = arrayFiltered.join("");
-    return result;
+    return array.filter(item => isFinite(item)).join("");
 }
 
 

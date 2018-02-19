@@ -29,14 +29,8 @@ console.log(wordFind('The quick fox brown fox', 'fox'));
 
 
 function wordFind1(string,word) {
-    var counter = 0;
-    while (string.includes(word)) {
-        var index = string.search(word);
-        counter++;
-        string = string.slice(index + word.length, string.length);
-    }
-    var output = word + " was found " + counter + " times.";
-    return output;
+    const result = string.split(" ").filter(item => item === word);
+    return word + " was found " + result.length + " times";
 }
 
 

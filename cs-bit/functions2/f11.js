@@ -10,7 +10,7 @@ function firstMiddleLastElement(array) {
         arrayResults[0] = array[0];
         arrayResults[1] = array[(array.length - 1) / 2];
         arrayResults[2] = array[array.length - 1];
-    } else  if (array.length % 2 === 0) {
+    } else if (array.length % 2 === 0) {
         arrayResults[0] = array[0];
         arrayResults[1] = array[array.length - 1];
     }
@@ -18,23 +18,16 @@ function firstMiddleLastElement(array) {
 }
 
 
-console.log(firstMiddleLastElement([1,2,3,4,5,6,7]));
+console.log(firstMiddleLastElement([1, 2, 3, 4, 5, 6, 7]));
 
 
 function firstMiddleLastElement1(array) {
-    var arrayResults = [];
-    if (array.length === 0 || array.length === 1) {
-        arrayResults = array;
-    } else if (array.length % 2 !== 0) {
-        arrayResults.push(array.shift());
-        arrayResults.push(array[array.length/2 - 1]);
-        arrayResults.push(array.pop());
-    } else  if (array.length % 2 === 0) {
-        arrayResults.push(array.shift());
-        arrayResults.push(array.pop());
-    }
-    return arrayResults;
+    const results = [];
+    array.length % 2 !== 0
+        ? results.push(array[0], array[(array.length - 1) / 2], array[array.length - 1])
+        : results.push(array[0],  array[array.length - 1]);
+    return results;
 }
 
 
-console.log(firstMiddleLastElement1([1,2,3,4,5,6,7,8,9]));
+console.log(firstMiddleLastElement1([1, 2, 3, 4, 5, 6, 7, 8, 9,]));

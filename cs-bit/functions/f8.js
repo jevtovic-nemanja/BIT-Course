@@ -17,3 +17,9 @@ function stringToArray(string) {
 
 
 console.log(stringToArray("random string"));
+
+const stringToArray1 = string => {
+    return string.split("").map(unit => unit === " " ? null : unit);
+};
+
+console.log(stringToArray1("random string"));

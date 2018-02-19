@@ -13,3 +13,10 @@ function average() {
 
 
 console.log(average(1,2,3,4,5,6));
+
+const avg = (...args) => {
+    return args.reduce((acc, cur) => acc + cur, 0) / args.length;
+};
+
+
+console.log(avg(1,2,3,4,5,6));

@@ -17,14 +17,8 @@ console.log(letterCount("djooka", "o"));
 
 
 function letterCount1(input, letter) {
-    var result = 0;
-    for (var i = 0; i < input.length; i++) {
-        var element = input[i];
-        if (element.search(letter) > -1) {
-            result++;
-        }
-    }
-    return result;
+    const letters = input.split("").filter(unit => unit === letter);
+    return letters.length;
 }
 
 

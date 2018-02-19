@@ -16,7 +16,7 @@ function concatenate(string, n) {
 console.log(concatenate("djoka", 3));
 
 
-function concatenate1(string, n) {
+function concatenate1(string, n=1) {
     var result = string.repeat(n);
     return result;
 }

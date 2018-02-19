@@ -13,7 +13,7 @@ function maxminElements(array) {
         if (isNaN(arrayParseFloat[j]) || !isFinite(arrayParseFloat[j])) {
             NaNCounter++;
         } else {
-            arrayNumbers[j-NaNCounter] = arrayParseFloat[j];
+            arrayNumbers[j - NaNCounter] = arrayParseFloat[j];
         }
     }
     var max = arrayNumbers[0];
@@ -29,24 +29,16 @@ function maxminElements(array) {
     arrayResult[0] = max;
     arrayResult[1] = min;
     return arrayResult;
-    }
+}
 
 
 console.log(maxminElements([1, "a", 3, 5, 899, null, false, Infinity, NaN, 11]));
 
 
 function maxminElements1(array) {
-    var arrayFiltered = [];
-    var arrayResult = [];
-    arrayFiltered = array.filter(function(element) {
-        if (typeof element === "number" && isFinite(element))
-        return element;
-    })
-    arrayFiltered.sort();
-    arrayResult[0] = arrayFiltered[arrayFiltered.length - 1];
-    arrayResult[1] = arrayFiltered[0];
-    return arrayResult;
-    }
+    const numbersArray = array.filter(item => isFinite(parseFloat(item)));
+    return numbersArray.filter(item => item === Math.max(...numbersArray) || item === Math.min(...numbersArray));
+}
 
 
 console.log(maxminElements1([1, "a", 3, 5, 899, null, false, Infinity, NaN, 11]));

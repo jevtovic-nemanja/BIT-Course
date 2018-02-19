@@ -11,23 +11,18 @@ function createArray(elements, content) {
         content = null;
     }
     for (var i = 0; i < elements; i++) {
-        array[i] = content;  
+        array[i] = content;
     }
     return array;
 }
 
 
-console.log(createArray(4,0));
+console.log(createArray(4, 0));
 
 
-function createArray1(elements, content) {
-    if (typeof content === "undefined") {
-        content = null;
-    }
-    var result = Array(elements);
-    result = result.fill(content);
-    return result;
+function createArray1(elements, content = null) {
+    return new Array(elements).fill(content);
 }
 
 
-console.log(createArray1(4,0));
+console.log(createArray1(4, 0));

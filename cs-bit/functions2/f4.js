@@ -25,12 +25,7 @@ console.log(numberToArray(123456789));
 
 
 function numberToArray1(number) {
-    var array = number.toString().split("");
-    var result = [];
-    array.forEach(function(element) {
-        result.push(parseInt(element));
-    })
-    return result;
+    return number.toString().split("").map(item => parseFloat(item));
 }
 
 

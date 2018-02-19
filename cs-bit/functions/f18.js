@@ -19,10 +19,7 @@ console.log(reverseNumber(12345));
 
 
 function reverseNumber1(number) {
-    var array = number.toString().split("");
-    var result = array.reverse().join("");
-    var output = parseInt(result);
-    return output;
+    return parseFloat(number.toString().split("").reverse().join(""))
 }
 
 

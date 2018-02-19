@@ -22,9 +22,7 @@ console.log(hideEmailAddress("nemanja.jevtovic@gmail.com"));
 
 
 function hideEmailAddress1(address) {
-    var index = address.search("@");
-    var result = "myemail..." + address.slice(index, address.length);
-    return result;
+    return "myemail..." + address.slice(address.indexOf("@"));
 }
 
 

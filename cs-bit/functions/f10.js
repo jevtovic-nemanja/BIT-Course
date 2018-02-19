@@ -22,10 +22,8 @@ function replaceSpace(string, separator) {
 console.log(replaceSpace("My random string"));
 
 
-function replaceSpace1(string, separator) {
-    separator = separator || "-";
-    var result = string.split(" ").join(separator);
-    return result;
+function replaceSpace1(string, separator="-") {
+    return string.split(" ").join(separator);
 }
 
 

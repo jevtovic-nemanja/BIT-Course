@@ -4,7 +4,7 @@
 
 function humanize(n) {
     var result = "";
-     if ((n % 100) >= 11 && (n % 100) <= 13) {
+    if ((n % 100) >= 11 && (n % 100) <= 13) {
         result = n + "th";
     } else if ((n % 10) === 1) {
         result = n + "st";
@@ -18,13 +18,13 @@ function humanize(n) {
     return result;
 }
 
-function lastOccurence(input,letter) {
+function lastOccurence(input, letter) {
     var result = -1;
     for (var i = 0; i < input.length; i++) {
         if (input[i] === letter) {
-           result = humanize(i+1);
+            result = humanize(i + 1);
         }
-    } 
+    }
     return result;
 }
 
@@ -32,13 +32,9 @@ function lastOccurence(input,letter) {
 console.log(lastOccurence("djokajd", "d"));
 
 
-function lastOccurence1(input,letter) {
+function lastOccurence1(input, letter) {
     var index = input.lastIndexOf(letter);
-    if (index === -1) {
-        return index;
-    } else {
-        return humanize(index+1);
-    }
+    return index === -1 ? index : humanize(index + 1);
 }
 
 

@@ -22,12 +22,7 @@ console.log(filterFalsy([NaN, 0, 15, false, -22, "", undefined, 47, null]));
 
 
 function filterFalsy1(array) {
-    var result = array.filter(function(element) {
-        if (element) {
-        return element;
-        }
-    });
-    return result;
+    return array.filter(item => item);
 }
 
 
