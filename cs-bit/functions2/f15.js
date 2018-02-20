@@ -44,6 +44,9 @@ function printInFrame(array) {
 
 console.log(printInFrame(["Hello", "World", "in", "a", "frame", "frames", "a"]));
 
+
+// String.padEnd polyfill
+
 if (!String.prototype.padEnd) {
     String.prototype.padEnd = function padEnd(targetLength,padString) {
         targetLength = targetLength>>0; //floor if number or convert non-number to 0;
@@ -60,6 +63,7 @@ if (!String.prototype.padEnd) {
         }
     };
 }
+
 
 const printInFrame1 = array => {
     const frameWidth = Math.max(...(array.map(item => item.length))) + 4;
