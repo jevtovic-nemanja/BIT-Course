@@ -65,7 +65,7 @@ function FirmAnswer(value) {
 FirmAnswer.prototype = Object.create(Answer.prototype);
 FirmAnswer.prototype.constructor = FirmAnswer;
 FirmAnswer.prototype.get = function() {
-    return answerPrototype.get.call(this) + " !!";
+    return Answer.prototype.get.call(this) + " !!";
 }
 
 //ES6
@@ -74,7 +74,7 @@ class FirmAnswer extends Answer {
         super(value);
     }
     get() {
-         return super() + "!!";
+         return super.get() + "!!";
     }
 }
 
